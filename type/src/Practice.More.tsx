@@ -25,9 +25,13 @@ export const ToPracticeMore = ({name, email, cellphone, onClick}:MyAcount ) => {
 
 
 
-export const ToPracticeLeast : React.FC <MyAcount> = ({name, email, cellphone, onClick}) => {
+export const ToPracticeLeastFC : React.FC <MyAcount> = ({name, email, cellphone, onClick}) => {
     
     return( <>
           
+          <h2>To practice more and more {name}  and my email {email} 
+          my number to keep it touch {cellphone}
+          <button onClick={onClick} >Here button 2</button>
+          </h2>
     </> )
 }

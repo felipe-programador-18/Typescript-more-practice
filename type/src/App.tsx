@@ -6,6 +6,7 @@ import { GuestList } from './Create';
 import EventComponent from './evets/events';
 import { SearchCode } from './Filter';
 import { SonOne } from './practice';
+import { ToPracticeLeastFC, ToPracticeMore } from './Practice.More';
 
 function App() {
   return (
@@ -31,6 +32,14 @@ function App() {
       <br/>
       <EventComponent/>
       <br/>
+
+
+      <ToPracticeLeastFC name='felipe' email='machadofelipe2016'  
+       cellphone={89530193} onClick={() => console.log("testing here my another button")}>
+
+       <h2>here more one time</h2>
+
+      </ToPracticeLeastFC>
 
     
     </div>
