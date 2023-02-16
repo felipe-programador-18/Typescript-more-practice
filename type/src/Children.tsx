@@ -1,4 +1,4 @@
-import React, { Children } from 'react'
+import React, { ChangeEvent, Children, useState } from 'react'
 
 export interface Children {
     name:string ; 
@@ -9,7 +9,8 @@ export interface Children {
 }
 
 export const CreateManage = ({name,nickname, age, onClick}:Children) => {
-    return (<>
+
+   return (<>
     <h1>My name is {name} and my nickname{nickname}, I'am {age} </h1>
 
     <button onClick={onClick} >Click here 1</button>
@@ -18,12 +19,15 @@ export const CreateManage = ({name,nickname, age, onClick}:Children) => {
 
 
 export const OtherFuntionAsFC: React.FC<Children> = ({name, nickname, age,onClick}) => {
-
+     
     return (<>
      <h2>Another Value here bro</h2>
 
        {name} , {nickname}, {age} 
-      <button onClick={onClick} >Click Here 2</button>   
+      <button onClick={onClick} >Click Here 2</button> 
+
+     
+
 
     </>)
 }

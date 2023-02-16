@@ -4,6 +4,7 @@ import './App.css';
 import { CreateManage, OtherFuntionAsFC } from './Children';
 import { GuestList } from './Create';
 import EventComponent from './evets/events';
+import { FormIssues } from './evets/Inputpractice';
 import { SearchCode } from './Filter';
 import { SonOne } from './practice';
 import { ToPracticeLeastFC, ToPracticeMore } from './Practice.More';
@@ -40,7 +41,8 @@ function App() {
        <h2>here more one time</h2>
 
       </ToPracticeLeastFC>
-
+      
+      <FormIssues/>
     
     </div>
   );
